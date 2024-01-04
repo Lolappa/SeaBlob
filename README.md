@@ -1,3 +1,3 @@
 # GiriTech
-GiriTech minecraft modpack \n
-blob!
+GiriTech minecraft modpack
+# blob!
