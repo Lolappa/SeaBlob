@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "beginning"
+	group: "7E6331DC9BED26EB"
+	icon: "minecraft:oak_log"
+	id: "3BB2424D3CCAD514"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Beginning"
+}
