@@ -1,0 +1,17 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "storage"
+	group: "18911C913DE17443"
+	icon: "minecraft:barrel"
+	id: "585E2FF73495A096"
+	order_index: 0
+	quest_links: [{
+		id: "1FE430B5F44092DA"
+		linked_quest: "101639DC2CE5A0D9"
+		x: 0.0d
+		y: 0.0d
+	}]
+	quests: [ ]
+	title: "Storage"
+}

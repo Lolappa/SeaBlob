@@ -7,6 +7,433 @@
 	id: "3BB2424D3CCAD514"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			description: ["This actually isn't an expert pack since logs give 4 planks... Sorry for scamming you :("]
+			id: "7623E82846077C4C"
+			rewards: [{
+				count: 8
+				id: "2E32094A46974530"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "3A7DC1F1D06A5662"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				type: "item"
+			}]
+			title: "It all starts the same"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7623E82846077C4C"]
+			description: [
+				"You're gonna need to store all your item somewhere, right?"
+				""
+				"&oThis quest also unlocks the storage questline&r"
+			]
+			id: "101639DC2CE5A0D9"
+			shape: "gear"
+			tasks: [{
+				id: "5B014F6240866538"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			title: "The most basic of storages"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7623E82846077C4C"]
+			description: [
+				"Get yourself a furnace, you'll need one, probably..."
+				""
+				"I'll reward you &ohandsomely&r if you do, don't spend it all at once!"
+			]
+			id: "05325B603AA66E61"
+			subtitle: "&oDefault furnace recipe? seriously? are you even trying to make a pack??&r"
+			tasks: [{
+				id: "6B0ABBF799780702"
+				item: "minecraft:furnace"
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "It's not even a good store..."
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05325B603AA66E61"]
+			description: [
+				"If you're unfamiliar with GregTech tools, that sucks for you, but basically, they can be made with any supported material, and come in a variety of shapes, and sometimes even sizes! However, I am requesting an Iron Hammer specifically"
+				""
+				"You will definitely need to make more tools, but I don't want to hand-hold you too much, so I'll only suggest you make the hammer for the time being"
+				""
+				"&oDo note, you're not supposed to make the Mining Hammer, since it won't count for the quest, that's a different thing, but you still are free to make one if you so please&r"
+			]
+			id: "75A7C6871F5A5887"
+			tasks: [{
+				id: "1D187B816707DF91"
+				item: {
+					Count: 1b
+					id: "gtceu:iron_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Some tools to get you started"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75A7C6871F5A5887"]
+			description: [
+				"Woah how did we get to needing bronze already?"
+				""
+				"Well, since we're here, get some bronze, it will be very useful if you want to make some steam machinery"
+				""
+				""
+				"&oTip: Mortars aren't used just for lobbing explosives&r"
+			]
+			id: "2BFCACA7A604BDCF"
+			subtitle: "&oMy rank in League&r"
+			tasks: [{
+				count: 16L
+				id: "217ED8ED04AFC1BC"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			title: "Bronze for your casings"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BFCACA7A604BDCF"]
+			description: [
+				"A boiler is used to heat water into steam, which is to no surprise, a very important fluid in the &6Steam Age&r"
+				""
+				"While you can technically make the liquid version of the boiler, I recommend you get the solid version, as it's easier to fuel in my opinion"
+			]
+			id: "30F10E7E77B4CA66"
+			subtitle: "&o Boiler? I barely know 'er...&r"
+			tasks: [{
+				id: "18AC7895E95AC9EB"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			title: "Boilers keep your water warm"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30F10E7E77B4CA66"]
+			description: [
+				"This should be your first steam machine, not that they're that expensive to begin with, but this one unlocks you a lot more stuff!"
+				""
+				"The &6Alloy Smelter&r allows you to make alloys much easier, for example, you no longer need to use a mortar to make bronze!"
+			]
+			id: "23F2D59F611ED944"
+			subtitle: "&oAlloy Smelter? I bare-&r"
+			tasks: [{
+				id: "59FD5854A34B45B0"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			title: "Your first machine!"
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75A7C6871F5A5887"]
+			description: [
+				"To get steel, you will need to construct your first multiblock; The &6Primitive Blast Furnace&r!"
+				""
+				"This multiblock takes iron and coal, and turns it into steel!"
+			]
+			id: "4F3237E93C0B030E"
+			tasks: [
+				{
+					id: "488A7C3CA1D4F017"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "536ABDC9D65CB983"
+					item: { Count: 32b, id: "gtceu:firebricks" }
+					type: "item"
+				}
+			]
+			title: "Steel?"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"4F3237E93C0B030E"
+				"70B48AC0C42CF443"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"You've finally made steel!"
+				""
+				""
+				"You might've noticed that some steel recipes take significantly longer than others, and since I'm feeling nice, I'll list all of them here!"
+				""
+				""
+				"- &71x Iron&r + &82x (Char)Coal&r - &490s&r"
+				"- &71x Wrought Iron&r + &82x (Char)Coal&r - &e40s&r"
+				""
+				"- &71x Iron&r + &81x Coal Coke&r - &675s&r"
+				"- &71x Wrought Iron&r + &81x Coal Coke&r - &a30s&r"
+				""
+				""
+				"&oAs you can see, Coke and Wrought Iron are significantly faster than coal/charcoal and iron, so if you need more steel, you have two options; make more PBFs, or switch to using coke and wrought iron&r"
+			]
+			id: "46F286E2EFD2E8F0"
+			tasks: [{
+				count: 8L
+				id: "0E4DC339E1F6180C"
+				item: { Count: 8b, id: "gtceu:steel_ingot" }
+				type: "item"
+			}]
+			title: "Steel!"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"75A7C6871F5A5887"
+				"7623E82846077C4C"
+			]
+			description: [
+				"The coke oven allows you to turn &0Coal&r into &8Coal Coke&r, a fuel that burns for longer, and allows you to create &7Steel&r faster. As well as creating Creosote, a fluid fuel which has several uses, such as burning in the liquid version of the steam boiler, and later on, it can be used to make Lubricant and Treated wood"
+				""
+				"&oIf you're here, I imagine you want the faster steel, so I'll let you in on a little secret... I added the ability to smelt Iron straight into Wrought Iron, just for you <3&r"
+			]
+			id: "70B48AC0C42CF443"
+			subtitle: "&oNot that type of coke&r"
+			tasks: [
+				{
+					id: "40C8A223D9CA362A"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "62689A41CE7EF741"
+					item: { Count: 25b, id: "gtceu:coke_oven_bricks" }
+					type: "item"
+				}
+			]
+			title: "Conke"
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"23F2D59F611ED944"
+				"46F286E2EFD2E8F0"
+			]
+			description: [
+				"Well, not really!"
+				"I've made the recipe for the glass tube slightly easier for you, since I love you so much!"
+				""
+				"The &aVacuum Tube&r is a component to make the first &9LV&r circuit, and also happens to be the first &9ULV&r circuit!"
+			]
+			id: "71D30A27957C387F"
+			tasks: [{
+				count: 2L
+				id: "75A1D105E6B51523"
+				item: { Count: 2b, id: "gtceu:vacuum_tube" }
+				type: "item"
+			}]
+			title: "This tube recipe sucks..."
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7623E82846077C4C"
+				"41E645825D6FC630"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"Rubber wood is a dark variant of wood, can look nice if you're into building, like a nerd, &oMage&r"
+				""
+				"More importantly, it's the source of &eSticky Resin&r, a material which you'll find very important, very soon"
+			]
+			id: "78B0EF8A2E633C73"
+			subtitle: "&oRubber? I ba-&r"
+			tasks: [{
+				count: 8L
+				id: "74A9D7E289DFC9E9"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			title: "Rubber trees!"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7623E82846077C4C"]
+			description: [
+				"Having issues finding rubber trees?"
+				""
+				"Don't worry buddy, I got you covered! For the small price of 32 logs, I'll give you some saplings"
+			]
+			id: "41E645825D6FC630"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "3C9027652E82D005"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "294507B26B35F15A"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				type: "item"
+			}]
+			title: "No rubber?"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["78B0EF8A2E633C73"]
+			description: ["Sticky resin is used to make &3Resistors&r, resin &3Circuit Boards&r, and in some cases, can be used as a substitute for &aSlimeballs&r"]
+			id: "634B2E6882FFC91D"
+			tasks: [{
+				count: 16L
+				id: "64E10D402DEDF37A"
+				item: { Count: 16b, id: "gtceu:sticky_resin" }
+				type: "item"
+			}]
+			title: "Eww"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"64E10D402DEDF37A"
+				"23F2D59F611ED944"
+			]
+			description: [
+				"The compressor allows you to turn your sticky resin into rubber sheets!"
+				""
+				"Rubber will be very useful for insulating wires"
+			]
+			id: "20418070CA33A9D1"
+			subtitle: "&oDu du du du du du dudu&r"
+			tasks: [{
+				id: "1D32AEBC08E8BEFF"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			title: "Under Pressure"
+			x: 11.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20418070CA33A9D1"]
+			id: "1A2CA31887DBAEA9"
+			subtitle: "&oYou're telling me a resin printed this circuit board?&r"
+			tasks: [{
+				id: "2A2BEA3E51A23ADE"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			title: "Your first Circuit Board!"
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"46F286E2EFD2E8F0"
+				"1A2CA31887DBAEA9"
+				"20418070CA33A9D1"
+				"71D30A27957C387F"
+				"7E18366CDAC8A74A"
+			]
+			description: [
+				"This quest unlocks the next questline, and a bunch of new machines!"
+				""
+				"&oTip: Even though the quest wants you to make only 1 circuit, I recommend making a couple more, maybe 8-16 if you can be bothered, you &lwill&r &ouse them&r"
+			]
+			id: "2DAC6B44607F536E"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5F937D14EA9C2C8E"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			title: "First LV Circuit!"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["634B2E6882FFC91D"]
+			description: [
+				"Resistors are another key component in circuitry, sadly these ones are a bit annoying to make, but don't worry, so is everything else!"
+				""
+				"But don't worry times two! Because just like everything else, these too get easier as you progress"
+			]
+			id: "7E18366CDAC8A74A"
+			tasks: [{
+				count: 2L
+				id: "10720440CED6EA8C"
+				item: { Count: 2b, id: "gtceu:resistor" }
+				type: "item"
+			}]
+			title: "Please... Do resist?"
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["75A7C6871F5A5887"]
+			description: [
+				"You might've noticed that you can't craft vanilla &7Iron&r, &6Gold&r, &bDiamond&r, and by extension &0Netherite&r tools"
+				""
+				"This is because I felt like it, but worry not!"
+				"The gregtech versions of tools aren't bad, and are barely more expensive"
+			]
+			id: "24ADAB2BA12071C7"
+			tasks: [{
+				id: "5EF028D1567AA212"
+				item: {
+					Count: 1b
+					id: "gtceu:wrought_iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Where my tools go :("
+			x: 3.5d
+			y: -2.0d
+		}
+	]
 	title: "Beginning"
 }

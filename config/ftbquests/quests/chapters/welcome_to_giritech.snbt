@@ -69,7 +69,12 @@
 			y: 1.0d
 		}
 		{
-			description: ["&o&bDiamond - Information&r"]
+			description: [
+				"&o&bDiamond - Information&r"
+				"&o&9Circle - Retrieval quest&r"
+				"&o&8Gear - Unlocks a new questline&r&r"
+				"&o&aSquare - Submit quest&r&r"
+			]
 			icon: "minecraft:nether_star"
 			id: "7804F887089DFE72"
 			shape: "diamond"
