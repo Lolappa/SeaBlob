@@ -2,5 +2,6 @@
 	chapter_groups: [
 		{ id: "6D199C17BECA4820", title: "Information" }
 		{ id: "7E6331DC9BED26EB", title: "Progression" }
+		{ id: "18911C913DE17443", title: "Other pack goodies" }
 	]
 }

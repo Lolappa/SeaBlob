@@ -1,0 +1,32 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "low_voltage_shenanigans"
+	group: "7E6331DC9BED26EB"
+	icon: "gtceu:basic_electronic_circuit"
+	id: "23EDB63F4CC82182"
+	order_index: 1
+	quest_links: [{
+		id: "2DF432F32B180453"
+		linked_quest: "2DAC6B44607F536E"
+		shape: "gear"
+		size: 2.0d
+		x: -3.0d
+		y: 0.0d
+	}]
+	quests: [{
+		dependencies: ["2DAC6B44607F536E"]
+		id: "5A0F5861170EF102"
+		shape: "diamond"
+		subtitle: "&oSteam sure was short, huh...&r"
+		tasks: [{
+			id: "353C0D8BB9438F00"
+			title: "Welcome"
+			type: "checkmark"
+		}]
+		title: "Welcome to LV!"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Low Voltage Shenanigans"
+}
