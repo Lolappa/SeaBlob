@@ -61,7 +61,7 @@
 			subtitle: "&oNo I don't pay them, how could you tell?&r"
 			tasks: [{
 				id: "611BB1AA2EF04DA2"
-				title: "Credits & Contributions"
+				title: "Credits \\& Contributions"
 				type: "checkmark"
 			}]
 			title: "Credits \\& Conitributions"
@@ -74,6 +74,7 @@
 				"&o&9Circle - Retrieval quest&r"
 				"&o&8Gear - Unlocks a new questline&r&r"
 				"&o&aSquare - Submit quest&r&r"
+				"&o&6Octagon - Challenge quest&r"
 			]
 			icon: "minecraft:nether_star"
 			id: "7804F887089DFE72"
