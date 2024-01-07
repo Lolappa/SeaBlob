@@ -9,6 +9,7 @@
 	quest_links: [{
 		id: "1FE430B5F44092DA"
 		linked_quest: "101639DC2CE5A0D9"
+		shape: "gear"
 		x: 0.0d
 		y: 0.0d
 	}]

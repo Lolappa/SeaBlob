@@ -388,7 +388,7 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			title: "First LV Circuit!"
+			title: "Your First LV Circuit!"
 			x: 10.0d
 			y: 4.0d
 		}
