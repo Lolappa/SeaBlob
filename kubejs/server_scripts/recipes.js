@@ -3,10 +3,12 @@ ServerEvents.recipes( event => {
 
     //Recipe removal
 
+    //event.remove({ mod: 'functionalstorage'})
     event.remove({ output: ['minecraft:iron_pickaxe', 'minecraft:iron_axe', 'minecraft:iron_shovel', 'minecraft:iron_hoe', 'minecraft:iron_sword']})
     event.remove({ output: ['minecraft:golden_pickaxe', 'minecraft:golden_axe', 'minecraft:golden_shovel', 'minecraft:golden_hoe', 'minecraft:golden_sword']})
     event.remove({ output: ['minecraft:diamond_pickaxe', 'minecraft:diamond_axe', 'minecraft:diamond_shovel', 'minecraft:diamond_hoe', 'minecraft:diamond_sword']})
     event.remove({ output: ['minecraft:netherite_pickaxe', 'minecraft:netherite_axe', 'minecraft:netherite_shovel', 'minecraft:netherite_hoe', 'minecraft:netherite_sword']})
+    event.remove({ mod: 'cobblefordays'})
 
 
     //Smelting, Blasting, Smoking, you get the idea
@@ -27,5 +29,12 @@ ServerEvents.recipes( event => {
         .itemOutputs('gtceu:rubber_plate')
         .duration(160)
         .EUt(4);
+
+    greg.chemical_reactor('giritech:phenolic_boards')
+        .itemInputs('gtceu:resin_circuit_board')
+        .inputFluids('gtceu:phenol 250')
+        .itemOutputs('gtceu:phenolic_circuit_board')
+        .duration(80)
+        .EUt(128)
 })
 
