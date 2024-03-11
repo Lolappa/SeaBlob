@@ -1,3 +1,2 @@
 # SeaBlob
-GiriTech minecraft modpack
-# SeaBlob!
+SeaBlob minecraft modpack
