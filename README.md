@@ -1,3 +1,3 @@
-# GiriTech (might rename)
+# SeaBlob
 GiriTech minecraft modpack
 # SeaBlob!
