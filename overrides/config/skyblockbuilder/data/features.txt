@@ -146,6 +146,7 @@ minecraft:pile_snow
 minecraft:pine
 minecraft:pointed_dripstone
 minecraft:rooted_azalea_tree
+gtceu:rubber_tree
 minecraft:sculk_patch_ancient_city
 minecraft:sculk_patch_deep_dark
 minecraft:sculk_vein
